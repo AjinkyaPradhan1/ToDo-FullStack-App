@@ -12,15 +12,6 @@ function ListTodosComponent(){
     const authContext = useAuth()
     const username = authContext.username
     const navigate = useNavigate()
-    
-    /*const todos = [
-        
-        {id:1,description:'Learn Java',done:false,targetDate:targetDate},
-        {id:2,description:'Learn Javascript',done:false,targetDate:targetDate},
-        {id:3,description:'Learn SpringBoot',done:false,targetDate:targetDate},
-        {id:4,description:'Learn AWS',done:false,targetDate:targetDate}
-        
-    ]*/
 
     useEffect(
         ()=>refreshTodos(),[]
