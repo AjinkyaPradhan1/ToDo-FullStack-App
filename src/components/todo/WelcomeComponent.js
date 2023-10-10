@@ -52,12 +52,13 @@ function WelcomeComponent(){
             <h1>Welcome {username}</h1>
                 <br/>
             <div>
-                Your Todos <Link to="/todos">Click Here</Link>
+                
+                <Link to="/todos"><button className="btn btn-success m-6" >Checkout Your Todos</button></Link>
             </div>
                 <br/>
-            <div>   
+            {/* <div>   
                 <button className="btn btn-success m-6" onClick={callHelloRestAPI}>Call Hello World REST API</button>
-            </div>
+            </div> */}
             <div className="text-info">{message}</div>
             
         </div>
